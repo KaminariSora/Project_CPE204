@@ -5,4 +5,5 @@
 
 
 # Before commit file
-1. check .gitignore
+1. check `.gitignore` file
+2. 🙏🙏🙏please don't push node modules.
