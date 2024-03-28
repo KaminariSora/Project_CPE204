@@ -1,3 +1,22 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Define styles for Prompt font */
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Define styles for Roboto Mono font */
+/* Note: Replace <uniquifier> and <weight> with actual values */
+.roboto-mono-100 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* Set up */
 * {
     margin: 0;
@@ -197,6 +216,7 @@ header ul li a.active {
     width: 50%;
     text-align: center;
     font-size: 1.5vw;
+    margin: auto;
 }
 
 #h2 {
@@ -204,10 +224,17 @@ header ul li a.active {
     color: #FFFFFF;
     font-size: 2vw;
     line-height: 2rem;
-
 }
 
 #computer-engineering, #swu {
     font-weight: 200;
     color: red;
+    margin-bottom: 40px;
+}
+
+.cpe-link {
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #7C7C7C;
 }
