@@ -48,11 +48,9 @@ const Firstpage = () => {
                     <img className="bg-img" src="./Img/Background.png" alt="background"></img>
                     <div className="subtitle">
                         <h1>เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
-                        <h2 id="h2">เรียนรู้ทักษะแห่งโลกดิจิทัล</h2>
-                        <h1>เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
-                        <h1>เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
-                        <h1>เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
-                        <h1>เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
+                        <h2 id="h2">เปิดโอกาศให้คุณก้าวสู่โลกดิจิตอลไปพร้อมกับเรา</h2>
+                        <h2 id="computer-engineering">Computer Engineering</h2>
+                        <h2 id="swu">Srinakarinwirot University</h2>
                     </div>
                 </div>
             </div>
