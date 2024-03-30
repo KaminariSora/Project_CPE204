@@ -2,6 +2,9 @@ import "./Firstpage.css"
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
+import ImageList from "./imageList";
+import MyComponent from "./mycomponent"
+import "./imageList.css"
 
 const Firstpage = () => {
     const imageStyle = {
@@ -42,19 +45,8 @@ const Firstpage = () => {
                     </div>
                 </div>
             </header>
-            {/* Body */}
-            <div className="hero">
-                <div className="image-box">
-                    <img className="bg-img" src="./Img/Background.png" alt="background"></img>
-                    <div className="subtitle">
-                        <h1 className="prompt-regular">เรียนรู้ทักษะแห่งโลกดิจิทัล</h1>
-                        <h2 className="prompt-regular roboto-mono-100" id="h2">เปิดโอกาศให้คุณก้าวสู่โลกดิจิตอลไปพร้อมกับเรา</h2>
-                        <h2 className="roboto-mono-100" id="computer-engineering">Computer Engineering</h2>
-                        <h2 className="roboto-mono-100" id="swu">Srinakarinwirot University</h2>
-                        <a className="cpe-link" href="#">cpe.eng.swu.ac.th</a>
-                    </div>
-                </div>
-            </div>
+            <ImageList/>
+
         </div>
     )
 }

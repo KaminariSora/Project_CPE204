@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+}
+
 ul {
     list-style: none;
 }
@@ -185,22 +189,7 @@ header ul li a.active {
     color: #2b1055;
 }
 
-.hero {
-    width: 100%;
-    height: auto;
-    padding-top: 4rem;
-    background-image: linear-gradient(rgba(0,0,0,0.7), #220033);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-}
 
-.image-box {
-    position: relative;
-    overflow: hidden;
-}
 
 .bg-img {
     width: 100vw;
