@@ -1,4 +1,4 @@
-import Firstpage from './Components/FirstPage';
+import Firstpage from './1st_Components/FirstPage';
 import './App.css';
 
 function App() {

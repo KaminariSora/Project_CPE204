@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import ImageList from "./imageList";
-import MyComponent from "./mycomponent"
 import "./imageList.css"
+import PrevStudent from "./prev-student";
 
 const Firstpage = () => {
     const imageStyle = {
@@ -49,6 +49,7 @@ const Firstpage = () => {
             <div className="text-prev">
                 <h1>Hear from Previous Students</h1>
             </div>
+            <PrevStudent/>
 
         </div>
     )
