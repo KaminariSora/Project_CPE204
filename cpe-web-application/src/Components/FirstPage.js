@@ -46,6 +46,9 @@ const Firstpage = () => {
                 </div>
             </header>
             <ImageList/>
+            <div className="text-prev">
+                <h1>Hear from Previous Students</h1>
+            </div>
 
         </div>
     )

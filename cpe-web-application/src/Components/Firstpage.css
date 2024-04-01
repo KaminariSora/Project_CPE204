@@ -227,3 +227,9 @@ header ul li a.active {
     border-radius: 40px;
     background-color: #7C7C7C;
 }
+
+.text-prev {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+}
