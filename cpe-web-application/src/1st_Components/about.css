@@ -9,3 +9,16 @@ body {
     width: 100vw;
     background: rgb(187, 169, 169);
 }
+
+.About-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 150vh;
+    background-color: black;
+}
+
+.About-container h1 {
+    color: white;
+}
