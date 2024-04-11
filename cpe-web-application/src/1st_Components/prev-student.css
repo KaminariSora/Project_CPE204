@@ -28,7 +28,7 @@
 }
 
 .student {
-    height: 50vh;
+    height: 65vh;
 }
 
 p {
@@ -49,6 +49,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     /* overflow: scroll; */
+    /* position: relative; */
 }
 
 .popup-content {
@@ -67,7 +68,8 @@ p {
 .information {
     display: flex;
     flex-direction: column;
-    /* font-size: 1.5rem; */
+    /* font-size: 1.5vw; */
+    font-size: clamp(2vw, 2vw, 3vw);
 }
 
 .close {
@@ -89,12 +91,35 @@ p {
     opacity: 1;
 }
 
-@media only screen and (max-width: 833px) {
+@media only screen and (min-width: 600px) and (max-width: 833px) {
+    .popup {
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .popup-content {
+        flex-wrap: wrap;
+    }
+    
+    .student-image {
+        /* margin-left: auto; */
+        margin: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
     .popup {
         overflow: scroll;
     }
 
     .popup-content {
         flex-wrap: wrap;
+    }
+
+    .student-image {
+        margin: auto;
+        margin-left: 0;
     }
 }

@@ -30,6 +30,7 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    background: white !important;
 }
 
 ul {
@@ -48,10 +49,15 @@ header ul li a {
     border-radius: 20px;
 }
 
-header ul li a:hover,
+header ul li:not(:first-child) a:hover,
 header ul li a.active {
     background-color: #fff;
     color: #2b1055;
+}
+
+li:first-child:hover {
+    background-color: transparent !important;
+    transform: scale(1.1);
 }
 /* -------------
  decoration 
@@ -192,8 +198,6 @@ header ul li a.active {
     color: #2b1055;
 }
 
-
-
 .bg-img {
     width: 100vw;
     height: 100%;
@@ -245,8 +249,8 @@ header ul li a.active {
 }
 
 .company {
-    margin-left: 10% auto;
-    margin-right: 10% auto;
+    margin-left: auto;
+    margin-right: auto;
     /* aspect-ratio: 3/2; */
     margin-top: 50px;
     margin-bottom: 100px;
@@ -256,10 +260,14 @@ header ul li a.active {
 }
 
 .company img {
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 300px;
     /* height: 125px; */
-    margin: auto;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
 }
 

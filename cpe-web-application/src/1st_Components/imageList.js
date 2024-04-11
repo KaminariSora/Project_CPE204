@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const ImageList = () => {
-    const images = ["./Img/main slide show (1).png", "./Img/5F6991C6-58F9-47A4-BE96-68BCA73A0CA8 1.png"]
+    const images = ["./Img/main slide show (1).png", "./Img/Group 3.png"]
     const [currentSlide, setCurrentSlide] = useState(0)
     // const mathtest = 1 % 3
     // console.log("result : ",mathtest)

@@ -8,7 +8,7 @@ const PrevStudent = () => {
         {
             id: 1,
             name: "Peem",
-            position: "Software engineer at Siam Commercial Bank",
+            position: "Software engineer",
             company: "Siam Commercial Bank",
             image: "./Img/square component.png",
             information: "Computer Engineering Department provides comprehensive knowledge and valuable opportunities. Our Teachers and Professors always impel us beyond our capability limits. They support our internships with renowned organizations, fostering independent learning. Their suggestions of various competitions have instilled a sense of pride in our achievements. These experiences foster personal growth, broaden perspectives, and provide diverse knowledge in software, hardware, electrical engineering, electronics, and business. This diverse understanding has efficiently shaped me into an effective software engineer who comprehends requirements proficiently."
@@ -16,23 +16,26 @@ const PrevStudent = () => {
         {
             id: 2,
             name: "Piano",
-            position: "Data scientist at Bangkok Bank",
+            position: "Data scientist",
             company: "Bangkok Bank",
             image: "./Img/square component (1).png",
+            information: "Studying in the computer engineering department is an adventure of learning new things, with instructors serving as guides and encouraging students to engage in programming competitions, hackathons, and technological challenges. This exposure allows us to discover our interests and career prospects, whether they are in software development, hardware design, or current networking systems, including working with critical big data in today’s world. Hands-on learning and exploration help us get a better understanding of ourselves and our interests, allowing us to make more informed decisions about our future paths."
         },
         {
             id: 3,
             name: "Note",
-            position: "Engineer (Level 4) at PEA",
+            position: "Engineer (Level 4)",
             company: "PEA",
-            image: "./Img/square component (2).png"
+            image: "./Img/square component (2).png",
+            information: "During my time studying in this department, I have learned many unaccustomed academic knowledge and they have technology devices that help me achieve knowledge about VR. The teachers/professors here are professional and capable of teaching me how to think analytically and develop my potential in both fields of software and hardware, allowing me to become a skillful engineer who is ready to face any kinds of work on-site."
         },
         {
             id: 4,
             name: "New",
-            position: "Penetration Tester at Datafarm",
+            position: "Penetration Tester",
             company: "Datafarm",
-            image: "./Img/square component (4).png"
+            image: "./Img/square component (4).png",
+            information: "Studying cybersecurity in Computer Engineering Department at SWU captivated me. It sparked my curiosity, pushing me to dive deeper into the basics and gain practical experience through internships and real-world projects AKA working. Learning from experienced professors and seniors broadened my understanding even more. This journey fueled my passion for cybersecurity, confirming my desire to pursue it as a career."
         }
     ];
 
