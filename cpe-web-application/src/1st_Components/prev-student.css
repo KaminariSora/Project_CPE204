@@ -81,9 +81,13 @@ p {
     /* background-color: aqua; */
 }
 
-.close:hover {
+.close img:hover {
     cursor: pointer;
-    color: yellow;
+    transform: scale(1.2);
+}
+
+.close img {
+    width: 40px;
 }
 
 .Pstudent {

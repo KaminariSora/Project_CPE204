@@ -63,7 +63,7 @@ const PrevStudent = () => {
             {showPopup && selectedStudent && (
                 <div className="popup">
                     <div className="popup-content">
-                        <span className="close" onClick={closePopup}>X</span>
+                        <span className="close" onClick={closePopup}><img src="./Img/cancle icon.png"></img></span>
                         <div className='student-image'>
                             <img src={selectedStudent.image} alt={selectedStudent.name} className='Pstudent'></img>
                             <p>{selectedStudent.name}</p>
