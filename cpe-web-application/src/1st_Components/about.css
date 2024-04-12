@@ -15,10 +15,83 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 150vh;
+    height: 200vh;
     background-color: black;
+    position: relative;
+    overflow-y: scroll;
 }
 
-.About-container h1 {
+.Text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200vh;
+    width: 80vw;
+    border: 2px solid blue;
+    position: relative;
+}
+
+.text {
     color: white;
+    margin: auto;
+    position: fixed;
+}
+
+#CPE {
+    /* left: 50%; */
+    /* transform: translate(-50%, 50%); */
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-top: 100px;
+    top: 100px;
+}
+
+#text-1 {
+    opacity: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-top: 100px;
+    top: 160px;
+}
+
+#text-2 {
+    opacity: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-top: 100px;
+    top: 300px;
+    font-size: 5rem;
+}
+
+.All-text-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background: #333; */
+}
+
+.Around-text {
+    position: fixed;
+    color: white;
+    width: auto;
+}
+
+#text-3 {
+    left: 30%;
+    top: 15%;
+    transform: translate(-50%, 50%);
+}
+
+#text-4 {
+    left: 70%;
+    /* right: 30%; */
+    top: 15%;
+    transform: translate(-50%, 50%);
+}
+
+#text-5 {
+    left: 20%;
+    top: 35%;
+    transform: translate(-50%, 50%);
 }
