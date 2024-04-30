@@ -4,6 +4,7 @@
 3. Run project `npm start` or `yarn start`
 4. npm install react-router-dom localforage match-sorter sort-by
 5. npm install @fortawesome/react-fontawesome
+6. npm install @fortawesome/free-solid-svg-icons
 
 
 # Before commit file
