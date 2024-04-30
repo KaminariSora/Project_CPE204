@@ -2,6 +2,8 @@
 1. Open in react folder `cd react_folder_name`
 2. ⭐ Install all node modules required `npm install express` ⭐
 3. Run project `npm start` or `yarn start`
+4. npm install react-router-dom localforage match-sorter sort-by
+5.npm run dev
 
 
 # Before commit file
