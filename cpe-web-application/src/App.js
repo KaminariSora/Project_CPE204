@@ -5,7 +5,7 @@ import MainPer from './1st_Components/PersonelPage/mainPer';
 function App() {
   return (
     <div>
-      <MainPer/>
+      <Firstpage/>
     </div>
   );
 }
