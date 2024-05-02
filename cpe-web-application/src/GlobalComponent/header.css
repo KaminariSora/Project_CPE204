@@ -1,0 +1,188 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Define styles for Prompt font */
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Define styles for Roboto Mono font */
+/* Note: Replace <uniquifier> and <weight> with actual values */
+.roboto-mono-100 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Set up */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Work sans', sans-serif; */
+    /* font-family: "Roboto Mono", monospace; */
+    font-family: "Prompt", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background: white !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li:not(:first-child) a:hover,
+header ul li a.active {
+    background-color: #fff;
+    color: #2b1055;
+}
+
+li:first-child:hover {
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+/* -------------
+ decoration 
+-----------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: #252932;
+    padding: 10px;
+    /* backdrop-filter: blur(5px); */
+}
+
+.nav {
+    position: relative;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navToggle,
+.navClose {
+    display: inline-flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navToggle {
+    color: #fff;
+    z-index: 9999;
+}
+
+/* Navigation for mobile */
+@media screen and (max-width: 1150px) {
+    .navMenu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: #252932;
+        width: 100%;
+        box-shadow: 0 12px 24px #333;
+        padding-block: 5rem 4rem;
+        transition: top .4s;
+    }
+    .navList {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        text-align: center;
+    }
+
+    .navLink,
+    .navClose {
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+}
+
+/* navigation for large device */
+@media screen and (min-width:1150px) {
+    .container {
+        margin-inline: auto;
+    }
+    
+    .nav {
+        column-gap: 3rem;
+        width: 100%;
+        height: auto;
+        /* padding: 2rem 20px; */
+        backdrop-filter: blur(5px);
+    }
+
+    .navToggle,
+    .navClose {
+        display: none;
+    }
+
+    .navMenu {
+        margin: auto;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 3rem;
+    }
+    
+    li a{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
+.navLink {
+    font-weight: 700;
+}
+
+.navLink:hover {
+    background-color: #fff;
+    color: #2b1055;
+}
+
+.navClose {
+    position: absolute;
+    top: 1.15rem;
+    right: 1.5rem;
+    z-index: 1000;
+    border: none;
+}

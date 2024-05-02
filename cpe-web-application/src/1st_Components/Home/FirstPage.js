@@ -1,6 +1,6 @@
 import "./Firstpage.css"
 import "./imageList.css"
-import Header from "./header";
+import Header from "../../GlobalComponent/header";
 import ImageList from "./imageList";
 import PrevStudent from "./prev-student";
 

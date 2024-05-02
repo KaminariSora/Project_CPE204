@@ -1,5 +1,5 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
-import Header from "./header";
+import Header from "../../GlobalComponent/header";
 import "./about.css";
 import { useRef, useEffect, useState } from "react";
 import gsap from 'gsap';

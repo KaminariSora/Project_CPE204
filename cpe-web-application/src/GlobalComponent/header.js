@@ -1,4 +1,4 @@
-import "./Firstpage.css"
+import "./header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const Header = () => {
                             <li className="listItem"><Link to="/home"><img src="./Img/logo cpe swu.png" style={imageStyle} alt="Logo"></img></Link></li>
                             <li className="listItem"><a className="navLink prompt-regular" href="#">Program</a></li>
                             <li className="listItem"><a className="navLink prompt-regular" href="https://admission.swu.ac.th/admissions2/">Admission</a></li>
-                            <li className="listItem"><a className="navLink prompt-regular" href="#">Personal</a></li>
+                            <li className="listItem"><Link className="navLink prompt-regular" to="/Personnel">Personal</Link></li>
                             <li className="listItem"><Link className="navLink prompt-regular" to="/about">About</Link></li>
                             <li className="listItem"><a className="navLink prompt-regular" href="#">Student</a></li>
                         </ul>

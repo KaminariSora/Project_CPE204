@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import About from './1st_Components/about';
+import About from './1st_Components/aboutPage/about.js';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -10,7 +10,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Firstpage from './1st_Components/FirstPage';
+import Firstpage from './1st_Components/Home/FirstPage.js';
+import MainPer from './1st_Components/PersonelPage/mainPer.js';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>
+  },
+  {
+    path:"/Personnel",
+    element:<MainPer/>
   }
 ]);
 
