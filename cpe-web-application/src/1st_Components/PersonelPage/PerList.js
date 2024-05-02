@@ -84,13 +84,13 @@ const PerList = () => {
     <div className="main-Personnel">
       <div className="Personnel-containner">
         <div className="slider-wrapper">
-        <button id="prev-slide" class="slide-button material-symbols-rounded"> </button>
+        <button id="prev-slide" className="slide-button material-symbols-rounded"> </button>
           <ul className="image-list">
             {AjList.map((e) => {
               return <Percard {...e} />;
             })}
           </ul>
-          <button id="next-slide" class="slide-button material-symbols-rounded"></button>
+          <button id="next-slide" className="slide-button material-symbols-rounded"></button>
         </div>
       </div>
     </div>

@@ -59,6 +59,29 @@ li:first-child:hover {
     background-color: transparent !important;
     transform: scale(1.1);
 }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black;
+}
+
+.listItem:hover .dropdown {
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: #fff !important;
+    transform: scale(1.1) !important;
+}
+
+.dropdown li a:hover {
+    background: none !important;
+}
 /* -------------
  decoration 
 -----------------*/
