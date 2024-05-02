@@ -5,31 +5,25 @@ import Slider from "react-slick";
 import React, { useState,useEffect, useRef } from 'react';
 
 const PerList = () => {
-  const imageListRef = useRef(null);
+  const boxRef = useRef(null);
 
-  useEffect(() => {
-    const imageList = imageListRef.current;
+    const btnPressPrev = () => {
+        if (boxRef.current) {
+            let width = boxRef.current.clientWidth;
+            boxRef.current.scrollLeft -= width;
+        }
+    };
 
-    const handleSlideButtons = () => {
-        const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
-    }
-}, []);
+    const btnPressNext = () => {
+        if (boxRef.current) {
+            let width = boxRef.current.clientWidth;
+            boxRef.current.scrollLeft += width;
+        }
+    };
 
-const slide = (direction) => {
-    const imageList = imageListRef.current;
-    const scrollAmount = imageList.clientWidth * direction;
-    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-};
-
-const prevSlide = () => {
-    slide(-1);
-    console.log("Prev");
-};
-
-const nextSlide = () => {
-    slide(1);
-};
+    useEffect(() => {
+        // Your other useEffect logic can remain here
+    }, []); 
 
   const AjList = [
     {
@@ -111,13 +105,13 @@ const nextSlide = () => {
     <div className="main-Personnel">
       <div className="Personnel-containner">
         <div className="slider-wrapper">
-        <button id="prev-slide" className="slide-button material-symbols-rounded"> </button>
-          <ul className="image-list">
+        <button id="prev-slide" className="slide-button material-symbols-rounded" onClick={btnPressPrev}> </button>
+          <div className="image-list" ref={boxRef}>
             {AjList.map((e) => {
               return <Percard {...e} />;
             })}
-          </ul>
-          <button id="next-slide" className="slide-button material-symbols-rounded"></button>
+          </div>
+          <button id="next-slide" className="slide-button material-symbols-rounded" onClick={btnPressNext}></button>
         </div>
       </div>
     </div>
