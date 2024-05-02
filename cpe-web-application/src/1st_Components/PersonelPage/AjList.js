@@ -1,37 +1,4 @@
-import "./PerList.css";
-import Percard from "./PerCard";
-import PropTypes from "prop-types";
-import Slider from "react-slick";
-import React, { useState,useEffect, useRef } from 'react';
-
-const PerList = () => {
-  const imageListRef = useRef(null);
-
-  useEffect(() => {
-    const imageList = imageListRef.current;
-
-    const handleSlideButtons = () => {
-        const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
-    }
-}, []);
-
-const slide = (direction) => {
-    const imageList = imageListRef.current;
-    const scrollAmount = imageList.clientWidth * direction;
-    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-};
-
-const prevSlide = () => {
-    slide(-1);
-    console.log("Prev");
-};
-
-const nextSlide = () => {
-    slide(1);
-};
-
-  const AjList = [
+export const AjList = [
     {
       img: "./Aj-image/AjTor_crop2.jpg",
       name: "ผศ.ดร.ประมวล ชูรัตน",
@@ -105,31 +72,3 @@ const nextSlide = () => {
       email: "psomphop@g.swu.ac.th",
     },
   ];
- 
-
-  return (
-    <div className="main-Personnel">
-      <div className="Personnel-containner">
-        <div className="slider-wrapper">
-<<<<<<< HEAD
-        <button id="prev-slide" className="slide-button material-symbols-rounded"> </button>
-=======
-        <button id="prev-slide" className="slide-button material-symbols-rounded" onClick={prevSlide} > </button>
->>>>>>> baitarn
-          <ul className="image-list">
-            {AjList.map((e) => {
-              return <Percard {...e} />;
-            })}
-          </ul>
-<<<<<<< HEAD
-          <button id="next-slide" className="slide-button material-symbols-rounded"></button>
-=======
-          <button id="next-slide" className="slide-button material-symbols-rounded"> </button>
->>>>>>> baitarn
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default PerList;
