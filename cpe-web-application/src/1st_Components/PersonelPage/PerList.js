@@ -111,21 +111,13 @@ const nextSlide = () => {
     <div className="main-Personnel">
       <div className="Personnel-containner">
         <div className="slider-wrapper">
-<<<<<<< HEAD
         <button id="prev-slide" className="slide-button material-symbols-rounded"> </button>
-=======
-        <button id="prev-slide" className="slide-button material-symbols-rounded" onClick={prevSlide} > </button>
->>>>>>> baitarn
           <ul className="image-list">
             {AjList.map((e) => {
               return <Percard {...e} />;
             })}
           </ul>
-<<<<<<< HEAD
           <button id="next-slide" className="slide-button material-symbols-rounded"></button>
-=======
-          <button id="next-slide" className="slide-button material-symbols-rounded"> </button>
->>>>>>> baitarn
         </div>
       </div>
     </div>
