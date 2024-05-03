@@ -24,7 +24,7 @@ const Header = () => {
                 <div className={`navMenu ${showMenu ? 'showMenu' : ''}`}>
                     <ul className="navList" type="none">
                         <li className="listItem"><Link to="/home"><img src="./Img/logo cpe swu.png" style={imageStyle} alt="Logo"></img></Link></li>
-                        <li className="listItem"><a className="navLink prompt-regular" href="#">Program</a></li>
+                        <li className="listItem"><Link className="navLink prompt-regular" to="/Program">Program</Link></li>
                         <li className="listItem"><a className="navLink prompt-regular" href="https://admission.swu.ac.th/admissions2/">Admission</a></li>
                         <li className="listItem"><Link className="navLink prompt-regular" to="/Personnel">Personal</Link></li>
                         <li className="listItem"><Link className="navLink prompt-regular" to="/about">About</Link></li>

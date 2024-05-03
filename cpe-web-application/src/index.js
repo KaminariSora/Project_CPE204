@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Firstpage from './1st_Components/Home/FirstPage.js';
 import MainPer from './1st_Components/PersonelPage/mainPer.js';
+import Program from './1st_Components/Program/Program.js';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path:"/Personnel",
     element:<MainPer/>
+  },
+  {
+    path:"/Program",
+    element:<Program/>
   }
 ]);
 
