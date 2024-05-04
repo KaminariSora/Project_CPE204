@@ -1,5 +1,5 @@
-// import "./header.css"
-import "../1st_Components/Home/Firstpage.css"
+import "./header.css"
+// import "../1st_Components/Home/Firstpage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -31,7 +31,7 @@ const Header = () => {
                         <li className="listItem">
                             <a className="navLink prompt-regular" href="#">Student</a>
                             <ul className="dropdown">
-                                <li><a href="#">Item 1</a></li>
+                                <li><Link to="/Blog">Blog</Link></li>
                                 <li><a href="#">Item 2</a></li>
                                 <li><a href="#">Item 3</a></li>
                                 <li><a href="#">Item 4</a></li>
