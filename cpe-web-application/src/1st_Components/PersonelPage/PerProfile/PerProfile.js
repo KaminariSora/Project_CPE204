@@ -62,7 +62,7 @@ const PerProfile =()=>{
                         <hr></hr>
                         <div className="content-Academic-work">
                             {Personel_work.map((work)=>{
-                                return <p>{work}</p>
+                                return <p dangerouslySetInnerHTML={{ __html: work }}></p>
                             })}
                             <img src={book_img}></img>
                        </div>
