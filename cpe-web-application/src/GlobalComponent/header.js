@@ -32,10 +32,10 @@ const Header = () => {
                             <a className="navLink prompt-regular" href="#">Student</a>
                             <ul className="dropdown">
                                 <li><Link to="/Blog">Blog</Link></li>
-                                <li><a href="#">Item 2</a></li>
-                                <li><a href="#">Item 3</a></li>
-                                <li><a href="#">Item 4</a></li>
-                                <li><a href="#">Item 5</a></li>
+                                <li><a href="https://swu.ac.th/student.php">ปฎิทินการศึกษา</a></li>
+                                <li><a href="https://cpe.eng.swu.ac.th/Default.aspx?tabid=20114">ตารางเรียน</a></li>
+                                <li><a href="https://cpe.eng.swu.ac.th/Default.aspx?tabid=20115">เอกสารนิสิต</a></li>
+                                <li><a href="https://supreme.swu.ac.th/portal/index.php">ระบบลงทะเบียน</a></li>
                             </ul></li>
                     </ul>
                     <div className="navClose" onClick={ToggleMenu}>

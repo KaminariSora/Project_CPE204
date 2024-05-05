@@ -2,6 +2,7 @@ import Header from "../../../GlobalComponent/header";
 import './PerProfile.css';
 import { useParams } from "react-router-dom";
 import { Data_Personnel } from "./PerProfileData";
+import Footer from "../../../GlobalComponent/footer";
 
 
 const PerProfile =()=>{
@@ -74,16 +75,7 @@ const PerProfile =()=>{
             <br></br>
             <br></br>
 
-            <footer>
-                <div className="left-footer">
-                    <p>Copyright 2567 by Faculty of Engineering</p>
-                </div>
-                <div className="right-footer">
-                    <p>Terms Of Use | Privacy Statement</p>
-                </div>
-                <br></br>
-                <br></br>
-            </footer>
+            <Footer/>
 
 
 
