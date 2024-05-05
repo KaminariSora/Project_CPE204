@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    box-sizing: border-box;
+}
+
+.Personnel-card{
+    border-radius: 10px;
+    width: 16rem;
+    height: 21rem;
+    background-color: #FFFFFF;
+    box-shadow: 1px 4px 3px lightgray;
+    cursor: pointer;
+}
+
+#Personnel-Img{
+    width: 16rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Personnel-card p{
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    color: #474747;
+}
+
+#Personnel-name{
+    color: #a81717;
+    font-weight: bold;
+}
