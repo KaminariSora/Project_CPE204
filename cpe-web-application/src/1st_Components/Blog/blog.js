@@ -1,5 +1,7 @@
 import Header from "../../GlobalComponent/header"
+import Footer from "../../GlobalComponent/footer"
 import "./blog.css"
+import ArticleContainer from "./article _box"
 
 const Blog = () => {
     return (
@@ -21,17 +23,10 @@ const Blog = () => {
                         บทความทั้งหมด
                         <hr></hr>
                     </h1>
-                    <article className="article-container">
-                        <div className="article-box">1</div>
-                        <div className="article-box">2</div>
-                        <div className="article-box">3</div>
-                        <div className="article-box">4</div>
-                        <div className="article-box">5</div>
-                        <div className="article-box">6</div>
-                    </article>
+                    <ArticleContainer/>
                 </div>
-                <div>3</div>
             </div>
+            <Footer/>
         </div>
     )
 }
