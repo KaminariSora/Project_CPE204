@@ -2,18 +2,27 @@ import PersonalImage from "./Perlmage.js";
 import Header from "../../GlobalComponent/header";
 import "./mainPer.css"
 import PerList from "./PerList.js";
+import { Link } from "react-router-dom";
 
 const MainPer = ()=>{
+
+
     return(
         <div>
             <Header/>
             <PersonalImage/>
-            <div className="Profile-head">
-            <span>โปรไฟล์บุคคลากร</span>
-            <a href="/#" className="show-all">แสดงทั้งหมด</a>
-            </div>
-            <hr></hr>
             <PerList/>
+            <br></br>
+            <footer>
+                <div className="left-footer">
+                    <p>Copyright 2567 by Faculty of Engineering</p>
+                </div>
+                <div className="right-footer">
+                    <p>Terms Of Use | Privacy Statement</p>
+                </div>
+                <br></br>
+                <br></br>
+            </footer>
 
         </div>
     )

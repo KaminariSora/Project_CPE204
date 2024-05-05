@@ -13,6 +13,8 @@ import {
 } from "react-router-dom";
 import Firstpage from './1st_Components/Home/FirstPage.js';
 import MainPer from './1st_Components/PersonelPage/mainPer.js';
+import Program from './1st_Components/Program/Program.js';
+import PerProfile from './1st_Components/PersonelPage/PerProfile/PerProfile.js';
 
 const router = createBrowserRouter([
   {
@@ -28,12 +30,24 @@ const router = createBrowserRouter([
     element: <About/>
   },
   {
-    path:"/Personnel",
+    path:"/Personnel/",
     element:<MainPer/>
   },
   {
     path: "/Blog",
     element:<Blog/>
+  },
+  {
+    path:"/Program",
+    element:<Program/>
+  },
+  {
+    path:"/PerProfile/:PersonnelId",
+    element:<PerProfile/>
+  },
+  {
+    path:"/PerProfile",
+    element:<PerProfile/>
   }
 ]);
 
