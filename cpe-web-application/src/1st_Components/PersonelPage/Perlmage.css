@@ -1,0 +1,31 @@
+.slideShow {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding-top: 4rem;
+    background-color: linear-gradient(rgba(109, 109, 109, 0.7),#fcfcfc);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.image-box img{
+    position: relative;
+    width: 100vw;
+    min-height: 40%;
+    display: block;
+}
+
+.active {
+    display: block  ;
+}
+
+
+/* @media only screen and (max-width: 375px) {
+    .image-box img {
+        height: 30vh;
+    }
+
+} */

@@ -1,0 +1,129 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    /* background-color: black; */
+    /* border: 1px solid black; */
+    overflow-y: visible;
+}
+
+.slide-wrapper {
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(4, auto);
+    padding: 10px;
+}
+
+.card {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.student {
+    height: 65vh;
+}
+
+p {
+    text-align: center;
+}
+
+.card .student:hover {
+    transform: scale(1.1);
+    overflow-y: visible;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    width: 90%;
+    border-radius: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    /* position: relative; */
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.student-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 1.5vw; */
+    font-size: clamp(2vw, 2vw, 3vw);
+}
+
+.close {
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    font-size: 2rem;
+    transform: translate(-50%,50%);
+    /* background-color: aqua; */
+}
+
+.close img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.close img {
+    width: 40px;
+}
+
+.Pstudent {
+    padding: 10px;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 833px) {
+    .popup {
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .popup-content {
+        flex-wrap: wrap;
+    }
+    
+    .student-image {
+        /* margin-left: auto; */
+        margin: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .popup {
+        overflow: scroll;
+    }
+
+    .popup-content {
+        flex-wrap: wrap;
+    }
+
+    .student-image {
+        margin: auto;
+        margin-left: 0;
+    }
+}
