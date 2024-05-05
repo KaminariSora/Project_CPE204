@@ -1,38 +1,3 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-/* Define styles for Prompt font */
-.prompt-regular {
-  font-family: "Prompt", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Define styles for Roboto Mono font */
-/* Note: Replace <uniquifier> and <weight> with actual values */
-.roboto-mono-100 {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-/* Set up */
-* {
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Work sans', sans-serif; */
-    /* font-family: "Roboto Mono", monospace; */
-    font-family: "Prompt", sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100vw;
-    overflow-x: hidden;
-    background: white !important;
-}
-
 ul {
     list-style: none;
 }
@@ -49,7 +14,7 @@ header ul li a {
     border-radius: 20px;
 }
 
-header ul li:not(:first-child) a:hover,
+header ul li:not(:first-child) .navLink:hover,
 header ul li a.active {
     background-color: #fff;
     color: #2b1055;
@@ -60,10 +25,29 @@ li:first-child:hover {
     transform: scale(1.1);
 }
 
-/* li:last-child:hover {
-    background-color: transparent !important;
-    transform: scale(1);
-} */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black;
+}
+
+.listItem:hover .dropdown {
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: #fff !important;
+    transform: scale(1.1) !important;
+    color: #A81717;
+}
+
+.dropdown li:hover a {
+    color: #333 !important;
+}
 /* -------------
  decoration 
 -----------------*/
@@ -112,30 +96,6 @@ li:first-child:hover {
     z-index: 9999;
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    color: black;
-}
-
-.listItem:hover .dropdown {
-    display: block;
-}
-
-.dropdown li:hover {
-    background-color: #fff !important;
-    transform: scale(1.1) !important;
-}
-
-.dropdown li a:hover {
-    background: none !important;
-}
-
-
 /* Navigation for mobile */
 @media screen and (max-width: 1150px) {
     .navMenu {
@@ -146,7 +106,6 @@ li:first-child:hover {
         width: 100%;
         box-shadow: 0 12px 24px #333;
         padding-block: 5rem 4rem;
-        z-index: 100;
         transition: top .4s;
     }
     .navList {
@@ -217,6 +176,13 @@ li:first-child:hover {
     border: none;
 }
 
+/* show Menu */
 .showMenu {
-    display: block;
+    top: 0;
+}
+
+/* active item */
+.active {
+    background-color: #fff;
+    color: #2b1055;
 }

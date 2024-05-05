@@ -1,0 +1,34 @@
+footer {
+    width: 100vw;
+    background: #252932;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    height: 105px;
+    position: relative;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer:after {
+    content: '';
+    width: 100vw;
+    height: 50px;
+    background: #A81717;
+    position: absolute;
+    top: -70%;
+    left: 0;
+    transform: translateY(50%);
+    z-index: -1;
+}
+
+.left-footer {
+    margin-left: 5px;
+}
+
+.right-footer {
+    margin-right: 25px;
+}

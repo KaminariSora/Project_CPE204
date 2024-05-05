@@ -3,6 +3,7 @@ import "./imageList.css"
 import Header from "../../GlobalComponent/header";
 import ImageList from "./imageList";
 import PrevStudent from "./prev-student";
+import Footer from "../../GlobalComponent/footer";
 
 const Firstpage = () => {
     return (
@@ -22,14 +23,7 @@ const Firstpage = () => {
                 <img src="./Img/Lotus_logo.png"></img>
                 <img src="./Img/Technology_logo.png"></img>
             </div>
-            <footer>
-                <div className="left-footer">
-                    <p>Copyright 2567 by Faculty of Engineering</p>
-                </div>
-                <div className="right-footer">
-                    <p>Terms Of Use | Privacy Statement</p>
-                </div>
-            </footer>
+            <Footer/>
 
         </div>
     )

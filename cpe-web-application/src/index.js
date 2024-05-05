@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import About from './1st_Components/aboutPage/about.js';
+import Blog from './1st_Components/Blog/blog.js';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path:"/Personnel/",
     element:<MainPer/>
+  },
+  {
+    path: "/Blog",
+    element:<Blog/>
   },
   {
     path:"/Program",
