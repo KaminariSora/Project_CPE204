@@ -2,6 +2,7 @@ import PersonalImage from "./Perlmage.js";
 import Header from "../../GlobalComponent/header";
 import "./mainPer.css"
 import PerList from "./PerList.js";
+import { Link } from "react-router-dom";
 
 const MainPer = ()=>{
 

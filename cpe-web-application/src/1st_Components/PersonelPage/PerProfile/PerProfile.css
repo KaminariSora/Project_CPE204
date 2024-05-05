@@ -42,7 +42,7 @@ hr{
 
 /* Profile-left */
 .Profile-slide-left span{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 200;
   }
 
@@ -60,7 +60,7 @@ hr{
 .Profile-slide-left a{
     background-color: white;
     color: #656565;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 100;
     width: 200px;
     border-radius: 42px;
@@ -123,6 +123,7 @@ hr{
  .Education-degree hr{
     max-width: 750px;
     width: 90%;
+    opacity: 0.5;
     border-top: 2px solid #252932;
     padding-left: 2px;
  }
@@ -169,3 +170,9 @@ hr{
     text-align: left;
     margin-top: 10px;
  }
+
+.content-Academic-work img{
+    width: 100%;
+}
+
+ 

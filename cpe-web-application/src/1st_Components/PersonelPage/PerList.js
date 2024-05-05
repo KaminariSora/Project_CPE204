@@ -145,7 +145,7 @@ import { faCircleChevronLeft ,faCircleArrowRight, faCircleChevronRight } from '@
 
             <div className="image-list" ref={boxRef}>
               {AjList.map((e) => {
-                return <Percard {...e} key ={e.id} />;
+                return <Percard {...e} />;
               })}
             </div>
           </div>

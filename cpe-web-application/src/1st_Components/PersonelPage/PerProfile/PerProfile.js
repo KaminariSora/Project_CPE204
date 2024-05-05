@@ -1,22 +1,37 @@
-import Header from "../../GlobalComponent/header";
+import Header from "../../../GlobalComponent/header";
 import './PerProfile.css';
+import { useParams } from "react-router-dom";
+import { Data_Personnel } from "./PerProfileData";
+
 
 const PerProfile =()=>{
+    const {PersonnelId} = useParams()
+
+    const Personnel_name = Data_Personnel[PersonnelId-1].name
+    const Personnel_Position = Data_Personnel[PersonnelId-1].position
+    const Personnel_img =Data_Personnel[PersonnelId-1].Personnel_img
+
+    const Personnel_Edu = Data_Personnel[PersonnelId-1].education
+    const Personel_Good = Data_Personnel[PersonnelId-1].good
+    const Personel_work = Data_Personnel[PersonnelId-1].work
+    const book_img = Data_Personnel[PersonnelId-1].book_img
+
     return(
         <div>
             <Header/>
+            
             <div className="Aj-bg">
                 <div className="Aj-slide">
                 <span className="name-Aj">บุคคลากร CPESWU</span>
                 <hr></hr>
                 <div id="Profile-slide">
                     <div className="Profile-slide-left">
-                        <span>ผศ.ดร.ประมวล ชูรัตน์</span>
-                        <span>หัวหน้าภาควิชา</span>
+                        <span>{Personnel_name}</span>
+                        <span>{Personnel_Position}</span>
                         <a href="https://www.youtube.com/results?search_query=form+slide+to+grid+with+react">ตารางสอน</a>
                     </div>
                     <div className="Profile-slide-Right">
-                        <img src="./Aj-crop/AjTor_crop2-removebg-preview (1).png"></img>
+                        <img src={Personnel_img}></img>
                     </div>
                 </div>
                 </div>
@@ -28,32 +43,34 @@ const PerProfile =()=>{
                         <span><strong>วุติการศึกษา</strong></span>
                         <hr></hr>
                         <div className="content-Education-degree">
-                            <p>ปรัชญาดุษฎีบัณฑิต สาขาวิชาวิศวกรรมไฟฟ้าและคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
-                            <p>วิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมอิเล็กทรอนิกส์และโทรคมนาคม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
-                            <p>ประกาศนียบัตรวิชาชีพชั้นสูง แผนกช่างอิเล็กทรอนิกส์ มหาวิทยาลัยราชมงคลอีสาน วิทยาเขตขอนแก่น</p>
+                            {Personnel_Edu.map((edu)=>{
+                                return <p>{edu}</p>
+                            })}
                         </div>
                     </div>
                     <div className="Good-at">
                         <span><strong>ความถนัด</strong></span>
                         <hr></hr>
                         <div className="content-Good-at">
-                            <p>Medical image and signal processing</p>
-                            <p>Pattern Recognition</p>
-                            <p>Computer Vision</p>
+                            {Personel_Good.map((good)=>{
+                                return <p>{good}</p>
+                            })}
                        </div>
                     </div>
                     <div className="Academic-work">
                         <span><strong>ผลงานทางวิชาการ</strong></span>
                         <hr></hr>
                         <div className="content-Academic-work">
-                            <p>Medical image and signal processing</p>
-                            <p>Pattern Recognition</p>
-                            <p>Computer Vision</p>
+                            {Personel_work.map((work)=>{
+                                return <p>{work}</p>
+                            })}
+                            <img src={book_img}></img>
                        </div>
                     </div>
                     
                 </div>
             </div>
+
             <br></br>
             <br></br>
 
