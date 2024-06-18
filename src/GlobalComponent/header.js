@@ -26,8 +26,8 @@ const Header = () => {
                         <li className="listItem"><Link to="/home"><img src="../Img/logo cpe swu.png" style={imageStyle} alt="Logo"></img></Link></li>
                         <li className="listItem"><Link className="navLink prompt-regular" to="/Program">Program</Link></li>
                         <li className="listItem"><a className="navLink prompt-regular" href="https://admission.swu.ac.th/admissions2/">Admission</a></li>
-                        <li className="listItem"><Link className="navLink prompt-regular" to="/Personnel">Personal</Link></li>
-                        <li className="listItem"><Link className="navLink prompt-regular" to="/about">About</Link></li>
+                        <li className="listItem"><Link className="navLink prompt-regular" to="/Personnal">Personal</Link></li>
+                        <li className="listItem"><Link className="navLink prompt-regular" to="/About">About</Link></li>
                         <li className="listItem">
                             <a className="navLink prompt-regular" href="#">Student</a>
                             <ul className="dropdown">

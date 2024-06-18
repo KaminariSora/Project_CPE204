@@ -31,7 +31,7 @@ const About = () => {
     useEffect(() => {
         gsap.from(textRef1.current, {
             opacity: 0,
-            y: 100,
+            // y: 100,
             duration: 2,
         });
 
@@ -51,7 +51,6 @@ const About = () => {
                 const value = currentScroll; // Calculate value inside handleScroll
                 gsap.to(textRef1.current, {
                     opacity: 1,
-                    // x: direction === 'down' ? -value * 0.75 + 'px' : '0',
                     duration: 1
                 });
                 gsap.to(textRef2.current, {
